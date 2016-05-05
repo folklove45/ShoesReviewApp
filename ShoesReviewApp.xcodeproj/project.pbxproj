@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A362A3E71CDBF15700320644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E61CDBF15700320644 /* AppDelegate.swift */; };
+		A362A3E91CDBF15700320644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E81CDBF15700320644 /* ViewController.swift */; };
+		A362A3EC1CDBF15700320644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A362A3EA1CDBF15700320644 /* Main.storyboard */; };
+		A362A3EE1CDBF15700320644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A362A3ED1CDBF15700320644 /* Assets.xcassets */; };
+		A362A3F11CDBF15700320644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A362A3EF1CDBF15700320644 /* LaunchScreen.storyboard */; };
+		A362A3FC1CDBF15700320644 /* ShoesReviewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3FB1CDBF15700320644 /* ShoesReviewAppTests.swift */; };
+		A362A4071CDBF15700320644 /* ShoesReviewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A4061CDBF15700320644 /* ShoesReviewAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A362A3F81CDBF15700320644 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A362A3DB1CDBF15600320644 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A362A3E21CDBF15700320644;
+			remoteInfo = ShoesReviewApp;
+		};
+		A362A4031CDBF15700320644 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A362A3DB1CDBF15600320644 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A362A3E21CDBF15700320644;
+			remoteInfo = ShoesReviewApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A362A3E31CDBF15700320644 /* ShoesReviewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoesReviewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A362A3E61CDBF15700320644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A362A3E81CDBF15700320644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A362A3EB1CDBF15700320644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A362A3ED1CDBF15700320644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A362A3F01CDBF15700320644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A362A3F21CDBF15700320644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A362A3F71CDBF15700320644 /* ShoesReviewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoesReviewAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A362A3FB1CDBF15700320644 /* ShoesReviewAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesReviewAppTests.swift; sourceTree = "<group>"; };
+		A362A3FD1CDBF15700320644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A362A4021CDBF15700320644 /* ShoesReviewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoesReviewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A362A4061CDBF15700320644 /* ShoesReviewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesReviewAppUITests.swift; sourceTree = "<group>"; };
+		A362A4081CDBF15700320644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A362A3E01CDBF15700320644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A362A3F41CDBF15700320644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A362A3FF1CDBF15700320644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A362A3DA1CDBF15600320644 = {
+			isa = PBXGroup;
+			children = (
+				A362A3E51CDBF15700320644 /* ShoesReviewApp */,
+				A362A3FA1CDBF15700320644 /* ShoesReviewAppTests */,
+				A362A4051CDBF15700320644 /* ShoesReviewAppUITests */,
+				A362A3E41CDBF15700320644 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A362A3E41CDBF15700320644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A362A3E31CDBF15700320644 /* ShoesReviewApp.app */,
+				A362A3F71CDBF15700320644 /* ShoesReviewAppTests.xctest */,
+				A362A4021CDBF15700320644 /* ShoesReviewAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A362A3E51CDBF15700320644 /* ShoesReviewApp */ = {
+			isa = PBXGroup;
+			children = (
+				A362A3E61CDBF15700320644 /* AppDelegate.swift */,
+				A362A3E81CDBF15700320644 /* ViewController.swift */,
+				A362A3EA1CDBF15700320644 /* Main.storyboard */,
+				A362A3ED1CDBF15700320644 /* Assets.xcassets */,
+				A362A3EF1CDBF15700320644 /* LaunchScreen.storyboard */,
+				A362A3F21CDBF15700320644 /* Info.plist */,
+			);
+			path = ShoesReviewApp;
+			sourceTree = "<group>";
+		};
+		A362A3FA1CDBF15700320644 /* ShoesReviewAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A362A3FB1CDBF15700320644 /* ShoesReviewAppTests.swift */,
+				A362A3FD1CDBF15700320644 /* Info.plist */,
+			);
+			path = ShoesReviewAppTests;
+			sourceTree = "<group>";
+		};
+		A362A4051CDBF15700320644 /* ShoesReviewAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A362A4061CDBF15700320644 /* ShoesReviewAppUITests.swift */,
+				A362A4081CDBF15700320644 /* Info.plist */,
+			);
+			path = ShoesReviewAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A362A3E21CDBF15700320644 /* ShoesReviewApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A362A40B1CDBF15700320644 /* Build configuration list for PBXNativeTarget "ShoesReviewApp" */;
+			buildPhases = (
+				A362A3DF1CDBF15700320644 /* Sources */,
+				A362A3E01CDBF15700320644 /* Frameworks */,
+				A362A3E11CDBF15700320644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoesReviewApp;
+			productName = ShoesReviewApp;
+			productReference = A362A3E31CDBF15700320644 /* ShoesReviewApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A362A3F61CDBF15700320644 /* ShoesReviewAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A362A40E1CDBF15700320644 /* Build configuration list for PBXNativeTarget "ShoesReviewAppTests" */;
+			buildPhases = (
+				A362A3F31CDBF15700320644 /* Sources */,
+				A362A3F41CDBF15700320644 /* Frameworks */,
+				A362A3F51CDBF15700320644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A362A3F91CDBF15700320644 /* PBXTargetDependency */,
+			);
+			name = ShoesReviewAppTests;
+			productName = ShoesReviewAppTests;
+			productReference = A362A3F71CDBF15700320644 /* ShoesReviewAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A362A4011CDBF15700320644 /* ShoesReviewAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A362A4111CDBF15700320644 /* Build configuration list for PBXNativeTarget "ShoesReviewAppUITests" */;
+			buildPhases = (
+				A362A3FE1CDBF15700320644 /* Sources */,
+				A362A3FF1CDBF15700320644 /* Frameworks */,
+				A362A4001CDBF15700320644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A362A4041CDBF15700320644 /* PBXTargetDependency */,
+			);
+			name = ShoesReviewAppUITests;
+			productName = ShoesReviewAppUITests;
+			productReference = A362A4021CDBF15700320644 /* ShoesReviewAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A362A3DB1CDBF15600320644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = FolkSonG;
+				TargetAttributes = {
+					A362A3E21CDBF15700320644 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A362A3F61CDBF15700320644 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A362A3E21CDBF15700320644;
+					};
+					A362A4011CDBF15700320644 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A362A3E21CDBF15700320644;
+					};
+				};
+			};
+			buildConfigurationList = A362A3DE1CDBF15700320644 /* Build configuration list for PBXProject "ShoesReviewApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A362A3DA1CDBF15600320644;
+			productRefGroup = A362A3E41CDBF15700320644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A362A3E21CDBF15700320644 /* ShoesReviewApp */,
+				A362A3F61CDBF15700320644 /* ShoesReviewAppTests */,
+				A362A4011CDBF15700320644 /* ShoesReviewAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A362A3E11CDBF15700320644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A362A3F11CDBF15700320644 /* LaunchScreen.storyboard in Resources */,
+				A362A3EE1CDBF15700320644 /* Assets.xcassets in Resources */,
+				A362A3EC1CDBF15700320644 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A362A3F51CDBF15700320644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A362A4001CDBF15700320644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A362A3DF1CDBF15700320644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A362A3E91CDBF15700320644 /* ViewController.swift in Sources */,
+				A362A3E71CDBF15700320644 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A362A3F31CDBF15700320644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A362A3FC1CDBF15700320644 /* ShoesReviewAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A362A3FE1CDBF15700320644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A362A4071CDBF15700320644 /* ShoesReviewAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A362A3F91CDBF15700320644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A362A3E21CDBF15700320644 /* ShoesReviewApp */;
+			targetProxy = A362A3F81CDBF15700320644 /* PBXContainerItemProxy */;
+		};
+		A362A4041CDBF15700320644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A362A3E21CDBF15700320644 /* ShoesReviewApp */;
+			targetProxy = A362A4031CDBF15700320644 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A362A3EA1CDBF15700320644 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A362A3EB1CDBF15700320644 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A362A3EF1CDBF15700320644 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A362A3F01CDBF15700320644 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A362A4091CDBF15700320644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A362A40A1CDBF15700320644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A362A40C1CDBF15700320644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShoesReviewApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FolkSonG.ShoesReviewApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A362A40D1CDBF15700320644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShoesReviewApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FolkSonG.ShoesReviewApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A362A40F1CDBF15700320644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ShoesReviewAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FolkSonG.ShoesReviewAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoesReviewApp.app/ShoesReviewApp";
+			};
+			name = Debug;
+		};
+		A362A4101CDBF15700320644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ShoesReviewAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FolkSonG.ShoesReviewAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoesReviewApp.app/ShoesReviewApp";
+			};
+			name = Release;
+		};
+		A362A4121CDBF15700320644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShoesReviewAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FolkSonG.ShoesReviewAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShoesReviewApp;
+			};
+			name = Debug;
+		};
+		A362A4131CDBF15700320644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShoesReviewAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FolkSonG.ShoesReviewAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShoesReviewApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A362A3DE1CDBF15700320644 /* Build configuration list for PBXProject "ShoesReviewApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A362A4091CDBF15700320644 /* Debug */,
+				A362A40A1CDBF15700320644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A362A40B1CDBF15700320644 /* Build configuration list for PBXNativeTarget "ShoesReviewApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A362A40C1CDBF15700320644 /* Debug */,
+				A362A40D1CDBF15700320644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A362A40E1CDBF15700320644 /* Build configuration list for PBXNativeTarget "ShoesReviewAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A362A40F1CDBF15700320644 /* Debug */,
+				A362A4101CDBF15700320644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A362A4111CDBF15700320644 /* Build configuration list for PBXNativeTarget "ShoesReviewAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A362A4121CDBF15700320644 /* Debug */,
+				A362A4131CDBF15700320644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A362A3DB1CDBF15600320644 /* Project object */;
+}
