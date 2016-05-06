@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        self.performSegueWithIdentifier("loginView", sender: self)
+        
+        //เพิ่ม Mettod นี้ขึ้นมาเพื่อให้สามารถติดต่อกับหน้า Login ได้.
+    }
 
 }
 
