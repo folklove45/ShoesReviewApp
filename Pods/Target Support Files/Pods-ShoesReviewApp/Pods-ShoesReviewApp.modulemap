@@ -1,0 +1,6 @@
+framework module Pods_ShoesReviewApp {
+  umbrella header "Pods-ShoesReviewApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
