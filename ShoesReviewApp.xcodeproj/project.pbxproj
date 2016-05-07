@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A327D22F1CDDAB650069F795 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A327D22E1CDDAB650069F795 /* ForgotPasswordViewController.swift */; };
 		A33FE4E61CDC590500A32A2F /* Kumulos.m in Sources */ = {isa = PBXBuildFile; fileRef = A33FE4E31CDC590500A32A2F /* Kumulos.m */; };
 		A33FE4E71CDC590500A32A2F /* Kumulos_ARMv7-Combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4E51CDC590500A32A2F /* Kumulos_ARMv7-Combined.a */; };
 		A33FE4E91CDC595100A32A2F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4E81CDC595100A32A2F /* SystemConfiguration.framework */; };
 		A33FE4EB1CDC595B00A32A2F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4EA1CDC595B00A32A2F /* MobileCoreServices.framework */; };
+		A33FE4F31CDC9D5300A32A2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */; };
 		A362A3E71CDBF15700320644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E61CDBF15700320644 /* AppDelegate.swift */; };
 		A362A3E91CDBF15700320644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E81CDBF15700320644 /* ViewController.swift */; };
 		A362A3EC1CDBF15700320644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A362A3EA1CDBF15700320644 /* Main.storyboard */; };
@@ -42,6 +44,7 @@
 		290D2A5D653D1E7E27E85318 /* Pods_ShoesReviewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoesReviewApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E68ED1F44E08FB98E4699C8 /* Pods-ShoesReviewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoesReviewApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoesReviewApp/Pods-ShoesReviewApp.release.xcconfig"; sourceTree = "<group>"; };
 		43C6371EE0427D25A2C50527 /* Pods-ShoesReviewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoesReviewApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoesReviewApp/Pods-ShoesReviewApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A327D22E1CDDAB650069F795 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		A33FE4E11CDC590400A32A2F /* ShoesReviewApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShoesReviewApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		A33FE4E21CDC590500A32A2F /* libKumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libKumulos.h; sourceTree = "<group>"; };
 		A33FE4E31CDC590500A32A2F /* Kumulos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kumulos.m; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		A33FE4E51CDC590500A32A2F /* Kumulos_ARMv7-Combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "Kumulos_ARMv7-Combined.a"; sourceTree = "<group>"; };
 		A33FE4E81CDC595100A32A2F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A33FE4EA1CDC595B00A32A2F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A362A3E31CDBF15700320644 /* ShoesReviewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoesReviewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A362A3E61CDBF15700320644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A362A3E81CDBF15700320644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 			children = (
 				A362A3E61CDBF15700320644 /* AppDelegate.swift */,
 				A362A3E81CDBF15700320644 /* ViewController.swift */,
+				A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */,
+				A327D22E1CDDAB650069F795 /* ForgotPasswordViewController.swift */,
 				A362A3EA1CDBF15700320644 /* Main.storyboard */,
 				A362A3ED1CDBF15700320644 /* Assets.xcassets */,
 				A362A3EF1CDBF15700320644 /* LaunchScreen.storyboard */,
@@ -361,8 +367,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A362A3E91CDBF15700320644 /* ViewController.swift in Sources */,
+				A327D22F1CDDAB650069F795 /* ForgotPasswordViewController.swift in Sources */,
 				A33FE4E61CDC590500A32A2F /* Kumulos.m in Sources */,
 				A362A3E71CDBF15700320644 /* AppDelegate.swift in Sources */,
+				A33FE4F31CDC9D5300A32A2F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var textUsername: UITextField!
+    @IBOutlet weak var textPassword: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,11 +24,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
-        self.performSegueWithIdentifier("loginView", sender: self)
+   @IBAction func buttonLogIn_OnClick() {
+        let kumuAPI = Kumulos()
+    
+        //kumuAPI.selectUserWithUsername(textUsername.text)
+    if(kumuAPI.selectUserWithUsername(textUsername.text)==textUsername.text){
+            var a = "Hello"
+            a = "work"
+            print(a)
         
-        //เพิ่ม Mettod นี้ขึ้นมาเพื่อให้สามารถติดต่อกับหน้า Login ได้.
+        //kumuAPI.selectUserWithPassword(textPassword.text)
+        }
     }
-
+    
 }
 
