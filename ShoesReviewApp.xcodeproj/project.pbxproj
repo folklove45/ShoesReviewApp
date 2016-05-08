@@ -116,6 +116,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A3097EAE1CDFB8770038CD9E /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TabBarController;
+			sourceTree = "<group>";
+		};
 		A33FE4E01CDC58F000A32A2F /* KumulosAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +161,7 @@
 		A362A3E51CDBF15700320644 /* ShoesReviewApp */ = {
 			isa = PBXGroup;
 			children = (
+				A3097EAE1CDFB8770038CD9E /* TabBarController */,
 				A362A3E61CDBF15700320644 /* AppDelegate.swift */,
 				A362A3E81CDBF15700320644 /* ViewController.swift */,
 				A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */,
