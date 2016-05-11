@@ -24,17 +24,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-   @IBAction func buttonLogIn_OnClick() {
-        let kumuAPI = Kumulos()
+    @IBAction func buttonLogIn_OnClick() {
+        //let kumuAPI = Kumulos()
     
         //kumuAPI.selectUserWithUsername(textUsername.text)
-    if(kumuAPI.selectUserWithUsername(textUsername.text)==textUsername.text){
-            var a = "Hello"
-            a = "work"
-            print(a)
+    self.tabBarController?.selectedViewController = self.tabBarController?.viewControllers?.first
+    
+
+    /*if(kumuAPI.selectUserWithUsername(textUsername.text)==textUsername.text){
         
+        //self.performSegueWithIdentifier("UITabBarController", sender: self)
+        self.tabBarController?.selectedViewController = self.tabBarController?.viewControllers?.first
         //kumuAPI.selectUserWithPassword(textPassword.text)
-        }
+        }*/
     }
     
 }

@@ -20,10 +20,14 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9F-WK-Krx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="PoV-qa-ZEK">
-                                        <rect key="frame" x="20" y="163" width="335" height="341"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenB" highlightedImage="LaunchScreenB" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PoV-qa-ZEK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="514"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Review" highlightedImage="Review" translatesAutoresizingMaskIntoConstraints="NO" id="Jvd-og-FUm">
+                                        <rect key="frame" x="121" y="528" width="133" height="112"/>
                                     </imageView>
                                 </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -36,6 +40,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreenBG" width="325" height="260"/>
+        <image name="LaunchScreenB" width="905" height="528"/>
+        <image name="Review" width="1107" height="1107"/>
     </resources>
 </document>
