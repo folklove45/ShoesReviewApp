@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textUsername: UITextField!
     @IBOutlet weak var textPassword: UITextField!
-    
+    let kumuAPI = Kumulos()
     
     override func viewDidLoad() {
         super.viewDidLoad()

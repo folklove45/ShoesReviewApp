@@ -23,7 +23,7 @@ class LogoutViewController: UIViewController {
     
     @IBAction func Logoutbutton_OnClick() {
         
-    //self.tabBarController?.selectedViewController = self.tabBarController?.viewControllers?.first
+    self.tabBarController?.selectedViewController = self.tabBarController?.viewControllers?.first
     
         
     }

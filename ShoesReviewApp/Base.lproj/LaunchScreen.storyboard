@@ -20,11 +20,11 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9F-WK-Krx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenB" highlightedImage="LaunchScreenB" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PoV-qa-ZEK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="514"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenB" highlightedImage="LaunchScreenB" translatesAutoresizingMaskIntoConstraints="NO" id="PoV-qa-ZEK">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="471"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Review" highlightedImage="Review" translatesAutoresizingMaskIntoConstraints="NO" id="Jvd-og-FUm">
-                                        <rect key="frame" x="121" y="528" width="133" height="112"/>
+                                        <rect key="frame" x="121" y="502" width="133" height="112"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

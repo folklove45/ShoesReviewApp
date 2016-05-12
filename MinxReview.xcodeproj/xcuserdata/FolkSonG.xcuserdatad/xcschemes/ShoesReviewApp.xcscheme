@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A362A3E21CDBF15700320644"
-               BuildableName = "ShoesReviewApp.app"
-               BlueprintName = "ShoesReviewApp"
-               ReferencedContainer = "container:ShoesReviewApp.xcodeproj">
+               BuildableName = "MinxReview.app"
+               BlueprintName = "MinxReview"
+               ReferencedContainer = "container:MinxReview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A362A3F61CDBF15700320644"
-               BuildableName = "ShoesReviewAppTests.xctest"
-               BlueprintName = "ShoesReviewAppTests"
-               ReferencedContainer = "container:ShoesReviewApp.xcodeproj">
+               BuildableName = "MinxReview.xctest"
+               BlueprintName = "MinxReviewTests"
+               ReferencedContainer = "container:MinxReview.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A362A4011CDBF15700320644"
-               BuildableName = "ShoesReviewAppUITests.xctest"
-               BlueprintName = "ShoesReviewAppUITests"
-               ReferencedContainer = "container:ShoesReviewApp.xcodeproj">
+               BuildableName = "MinxReview.xctest"
+               BlueprintName = "MinxReviewUITests"
+               ReferencedContainer = "container:MinxReview.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A362A3E21CDBF15700320644"
-            BuildableName = "ShoesReviewApp.app"
-            BlueprintName = "ShoesReviewApp"
-            ReferencedContainer = "container:ShoesReviewApp.xcodeproj">
+            BuildableName = "MinxReview.app"
+            BlueprintName = "MinxReview"
+            ReferencedContainer = "container:MinxReview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A362A3E21CDBF15700320644"
-            BuildableName = "ShoesReviewApp.app"
-            BlueprintName = "ShoesReviewApp"
-            ReferencedContainer = "container:ShoesReviewApp.xcodeproj">
+            BuildableName = "MinxReview.app"
+            BlueprintName = "MinxReview"
+            ReferencedContainer = "container:MinxReview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A362A3E21CDBF15700320644"
-            BuildableName = "ShoesReviewApp.app"
-            BlueprintName = "ShoesReviewApp"
-            ReferencedContainer = "container:ShoesReviewApp.xcodeproj">
+            BuildableName = "MinxReview.app"
+            BlueprintName = "MinxReview"
+            ReferencedContainer = "container:MinxReview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
