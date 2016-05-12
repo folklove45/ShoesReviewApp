@@ -16,7 +16,7 @@
 		A33FE4EB1CDC595B00A32A2F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4EA1CDC595B00A32A2F /* MobileCoreServices.framework */; };
 		A33FE4F31CDC9D5300A32A2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */; };
 		A362A3E71CDBF15700320644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E61CDBF15700320644 /* AppDelegate.swift */; };
-		A362A3E91CDBF15700320644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E81CDBF15700320644 /* ViewController.swift */; };
+		A362A3E91CDBF15700320644 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E81CDBF15700320644 /* LoginViewController.swift */; };
 		A362A3EC1CDBF15700320644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A362A3EA1CDBF15700320644 /* Main.storyboard */; };
 		A362A3F11CDBF15700320644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A362A3EF1CDBF15700320644 /* LaunchScreen.storyboard */; };
 		A362A3FC1CDBF15700320644 /* ShoesReviewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3FB1CDBF15700320644 /* ShoesReviewAppTests.swift */; };
@@ -60,7 +60,7 @@
 		A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A362A3E31CDBF15700320644 /* MinxReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinxReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A362A3E61CDBF15700320644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A362A3E81CDBF15700320644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A362A3E81CDBF15700320644 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A362A3EB1CDBF15700320644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A362A3ED1CDBF15700320644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A362A3F01CDBF15700320644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -135,6 +135,16 @@
 			name = TabBarController;
 			sourceTree = "<group>";
 		};
+		A318C8DB1CE4A6AD00680C63 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A362A3E81CDBF15700320644 /* LoginViewController.swift */,
+				A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */,
+				A327D22E1CDDAB650069F795 /* ChangePasswordViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A33FE4E01CDC58F000A32A2F /* KumulosAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,10 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				A3097EAE1CDFB8770038CD9E /* TabBarController */,
+				A318C8DB1CE4A6AD00680C63 /* ViewControllers */,
 				A362A3E61CDBF15700320644 /* AppDelegate.swift */,
-				A362A3E81CDBF15700320644 /* ViewController.swift */,
-				A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */,
-				A327D22E1CDDAB650069F795 /* ChangePasswordViewController.swift */,
 				A362A3EA1CDBF15700320644 /* Main.storyboard */,
 				A362A3ED1CDBF15700320644 /* Assets.xcassets */,
 				A362A3EF1CDBF15700320644 /* LaunchScreen.storyboard */,
@@ -386,7 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A362A3E91CDBF15700320644 /* ViewController.swift in Sources */,
+				A362A3E91CDBF15700320644 /* LoginViewController.swift in Sources */,
 				A327D22F1CDDAB650069F795 /* ChangePasswordViewController.swift in Sources */,
 				A3AB56A81CE3AE360015BCCE /* SearchViewController.swift in Sources */,
 				A33FE4E61CDC590500A32A2F /* Kumulos.m in Sources */,

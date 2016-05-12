@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="IiU-mL-xvA">
             <objects>
-                <viewController id="wls-DS-rDu" customClass="ViewController" customModule="MinxReview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wls-DS-rDu" customClass="LoginViewController" customModule="MinxReview" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oee-6q-WA1"/>
                         <viewControllerLayoutGuide type="bottom" id="wxd-Ul-6sQ"/>
@@ -75,7 +75,6 @@
                                         </state>
                                         <connections>
                                             <action selector="buttonLogIn_OnClick" destination="wls-DS-rDu" eventType="touchUpInside" id="4Fd-BW-UqP"/>
-                                            <segue destination="NHu-Oc-c7j" kind="presentation" id="NUd-0M-EtD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -88,6 +87,7 @@
                     <connections>
                         <outlet property="textPassword" destination="gcF-qf-bxC" id="99d-C9-jP3"/>
                         <outlet property="textUsername" destination="DoC-9k-hMT" id="um2-Jo-Oqz"/>
+                        <segue destination="NHu-Oc-c7j" kind="presentation" identifier="TabBarView" id="DH4-XL-dRf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B1J-Dl-eym" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -326,7 +326,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="546"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="s8g-Zl-V46">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchPrototypeCells" id="s8g-Zl-V46">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s8g-Zl-V46" id="hhq-b6-QNl">
@@ -371,7 +371,7 @@
                                     <navigationItem title="Home" id="VFA-Tu-7l2" colorLabel="IBBuiltInLabel-Red">
                                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="r1e-Qr-blt">
                                             <connections>
-                                                <segue destination="4K2-f7-9TB" kind="presentation" id="ANe-9j-kgE"/>
+                                                <segue destination="4K2-f7-9TB" kind="presentation" identifier="HomePostView" id="ANe-9j-kgE"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -381,7 +381,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="546"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="Dza-b1-HYl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomePrototypeCells" rowHeight="43" id="Dza-b1-HYl">
                                         <rect key="frame" x="0.0" y="28" width="375" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dza-b1-HYl" id="W25-Pw-6NC">
@@ -446,17 +446,10 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-LI-6s0">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Dt-7Fr">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Describe your moment..." translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Dt-7Fr">
                                         <rect key="frame" x="8" y="339" width="359" height="149"/>
                                         <color key="backgroundColor" red="0.76599485626105501" green="0.97022867202758789" blue="0.92431818857534309" alpha="1" colorSpace="calibratedRGB"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Describe your moment...">
-                                                <attributes>
-                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xC-nH-jdK">
@@ -511,6 +504,7 @@
                     <connections>
                         <outlet property="txtDescribe" destination="ywH-Dt-7Fr" id="zss-wM-Mc0"/>
                         <outlet property="txtPhoto" destination="9xC-nH-jdK" id="Uud-gS-S6Q"/>
+                        <segue destination="NHu-Oc-c7j" kind="showDetail" identifier="ShoesReviewToTabBar" id="MNv-Xv-QwJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQV-Xh-bTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -553,6 +547,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="T2G-wE-r72"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="wls-DS-rDu" kind="presentation" identifier="LogOutToLogInView" id="0hL-kD-8Qj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1i-5M-AFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -569,6 +566,7 @@
         <image name="Username" width="168" height="191"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gZu-FA-YQf"/>
+        <segue reference="MNv-Xv-QwJ"/>
+        <segue reference="0hL-kD-8Qj"/>
     </inferredMetricsTieBreakers>
 </document>
