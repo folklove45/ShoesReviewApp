@@ -303,7 +303,7 @@
             </objects>
             <point key="canvasLocation" x="403.5" y="398.5"/>
         </scene>
-        <!--Search View Controller-->
+        <!--Search-->
         <scene sceneID="rgY-Dt-MKd">
             <objects>
                 <viewController id="3Ju-Nq-EGk" customClass="SearchViewController" customModule="MinxReview" customModuleProvider="target" sceneMemberID="viewController">
@@ -339,7 +339,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="NlM-xz-Ajc"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search" id="NlM-xz-Ajc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E91-Sg-NTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="34N-1H-iSt">
@@ -353,7 +354,7 @@
             </objects>
             <point key="canvasLocation" x="866.5" y="1167.5"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="CnY-8Z-Hfr">
             <objects>
                 <viewController id="Vuz-f2-rd3" customClass="HomeViewController" customModule="MinxReview" customModuleProvider="target" sceneMemberID="viewController">
@@ -361,7 +362,7 @@
                         <viewControllerLayoutGuide type="top" id="Wey-L0-cxa"/>
                         <viewControllerLayoutGuide type="bottom" id="XVu-Vt-HHG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mdT-Ff-oMI" customClass="Homeview">
+                    <view key="view" contentMode="scaleToFill" id="mdT-Ff-oMI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -394,7 +395,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="uR6-Zb-4rc"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="uR6-Zb-4rc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="uv0-Zn-UVz" id="a6N-Yw-6M7"/>
                     </connections>
@@ -504,14 +506,14 @@
                     <connections>
                         <outlet property="txtDescribe" destination="ywH-Dt-7Fr" id="zss-wM-Mc0"/>
                         <outlet property="txtPhoto" destination="9xC-nH-jdK" id="Uud-gS-S6Q"/>
-                        <segue destination="NHu-Oc-c7j" kind="presentation" identifier="ShoesReviewToTabBar" id="mXg-Jh-LCi"/>
+                        <segue destination="NHu-Oc-c7j" kind="presentation" identifier="ShoesReviewToTabBar" id="Q2r-0f-WFE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQV-Xh-bTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="408.5" y="1972.5"/>
         </scene>
-        <!--Logout View Controller-->
+        <!--Profile-->
         <scene sceneID="qsg-Cs-uWg">
             <objects>
                 <viewController id="SpF-3F-04P" customClass="LogoutViewController" customModule="MinxReview" customModuleProvider="target" sceneMemberID="viewController">
@@ -545,7 +547,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="T2G-wE-r72"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Log Out" id="T2G-wE-r72"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="wls-DS-rDu" kind="presentation" identifier="LogOutToLogInView" id="0hL-kD-8Qj"/>
@@ -559,14 +561,17 @@
     <resources>
         <image name="Camera logo" width="512" height="512"/>
         <image name="ChangePassword" width="359" height="300"/>
+        <image name="Home" width="38" height="38"/>
         <image name="LaunchScreenB" width="905" height="528"/>
+        <image name="Log Out" width="40" height="40"/>
         <image name="Login Logo" width="1200" height="536"/>
         <image name="Password" width="168" height="191"/>
         <image name="Register Logo" width="878" height="361"/>
+        <image name="Search" width="38" height="38"/>
         <image name="Username" width="168" height="191"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mXg-Jh-LCi"/>
+        <segue reference="Q2r-0f-WFE"/>
         <segue reference="0hL-kD-8Qj"/>
     </inferredMetricsTieBreakers>
 </document>
