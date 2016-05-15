@@ -2,7 +2,7 @@
 //  Kumulos.m
 //  Kumulos
 //
-//  Created by Kumulos Bindings Compiler on May  3, 2016
+//  Created by Kumulos Bindings Compiler on May 14, 2016
 //
 
 #import "Kumulos.h"
@@ -113,11 +113,13 @@
     
 }
 
--(KSAPIOperation*) createPostsWithDescription:(NSString*)description{
+-(KSAPIOperation*) createPostsWithDescription:(NSString*)description andPostOwner:(NSUInteger)postOwner andImageData:(NSData*)imageData{
 
     
      NSMutableDictionary* theParams = [[NSMutableDictionary alloc]init];
             [theParams setValue:description forKey:@"description"];
+                    [theParams setValue:[NSNumber numberWithInt:postOwner] forKey:@"postOwner"];
+                    [theParams setValue:imageData forKey:@"imageData"];
                         
     KSAPIOperation* newOp = [[KSAPIOperation alloc]initWithAPIKey:theAPIKey andSecretKey:theSecretKey andMethodName:@"createPosts" andParams:theParams];
     [newOp setDelegate:self];
@@ -220,12 +222,13 @@
     
 }
 
--(KSAPIOperation*) deleteUserWithUsername:(NSString*)username andPassword:(NSString*)password{
+-(KSAPIOperation*) deleteUserWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email{
 
     
      NSMutableDictionary* theParams = [[NSMutableDictionary alloc]init];
             [theParams setValue:username forKey:@"username"];
                     [theParams setValue:password forKey:@"password"];
+                    [theParams setValue:email forKey:@"email"];
                         
     KSAPIOperation* newOp = [[KSAPIOperation alloc]initWithAPIKey:theAPIKey andSecretKey:theSecretKey andMethodName:@"deleteUser" andParams:theParams];
     [newOp setDelegate:self];
@@ -242,11 +245,12 @@
     
 }
 
--(KSAPIOperation*) selectUserWithUsername:(NSString*)username{
+-(KSAPIOperation*) selectUserWithUsername:(NSString*)username andPassword:(NSString*)password{
 
     
      NSMutableDictionary* theParams = [[NSMutableDictionary alloc]init];
             [theParams setValue:username forKey:@"username"];
+                    [theParams setValue:password forKey:@"password"];
                         
     KSAPIOperation* newOp = [[KSAPIOperation alloc]initWithAPIKey:theAPIKey andSecretKey:theSecretKey andMethodName:@"selectUser" andParams:theParams];
     [newOp setDelegate:self];
@@ -263,13 +267,12 @@
     
 }
 
--(KSAPIOperation*) updateUserWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email{
+-(KSAPIOperation*) updateUserWithUsername:(NSString*)username andPassword:(NSString*)password{
 
     
      NSMutableDictionary* theParams = [[NSMutableDictionary alloc]init];
             [theParams setValue:username forKey:@"username"];
                     [theParams setValue:password forKey:@"password"];
-                    [theParams setValue:email forKey:@"email"];
                         
     KSAPIOperation* newOp = [[KSAPIOperation alloc]initWithAPIKey:theAPIKey andSecretKey:theSecretKey andMethodName:@"updateUser" andParams:theParams];
     [newOp setDelegate:self];

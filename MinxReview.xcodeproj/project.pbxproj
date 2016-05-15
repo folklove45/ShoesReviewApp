@@ -10,8 +10,8 @@
 		A318C8D51CE46FA700680C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A362A3ED1CDBF15700320644 /* Assets.xcassets */; };
 		A318C8D71CE4838200680C63 /* ShoesReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318C8D61CE4838200680C63 /* ShoesReviewViewController.swift */; };
 		A327D22F1CDDAB650069F795 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A327D22E1CDDAB650069F795 /* ChangePasswordViewController.swift */; };
-		A33FE4E61CDC590500A32A2F /* Kumulos.m in Sources */ = {isa = PBXBuildFile; fileRef = A33FE4E31CDC590500A32A2F /* Kumulos.m */; };
-		A33FE4E71CDC590500A32A2F /* Kumulos_ARMv7-Combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4E51CDC590500A32A2F /* Kumulos_ARMv7-Combined.a */; };
+		A33C93C71CE7C93100D577E6 /* Kumulos_ARMv7-Combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33C93C31CE7C93100D577E6 /* Kumulos_ARMv7-Combined.a */; };
+		A33C93C81CE7C93100D577E6 /* Kumulos.m in Sources */ = {isa = PBXBuildFile; fileRef = A33C93C51CE7C93100D577E6 /* Kumulos.m */; };
 		A33FE4E91CDC595100A32A2F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4E81CDC595100A32A2F /* SystemConfiguration.framework */; };
 		A33FE4EB1CDC595B00A32A2F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4EA1CDC595B00A32A2F /* MobileCoreServices.framework */; };
 		A33FE4F31CDC9D5300A32A2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */; };
@@ -24,6 +24,7 @@
 		A3AB56A41CE3AD570015BCCE /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB56A31CE3AD570015BCCE /* LogoutViewController.swift */; };
 		A3AB56A61CE3ADE00015BCCE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB56A51CE3ADE00015BCCE /* HomeViewController.swift */; };
 		A3AB56A81CE3AE360015BCCE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB56A71CE3AE360015BCCE /* SearchViewController.swift */; };
+		A3FF1E1D1CE79A2600DAD3D2 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FF1E1C1CE79A2600DAD3D2 /* BaseService.swift */; };
 		E9DA6F03A99004290557BAA5 /* Pods_ShoesReviewApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D2A5D653D1E7E27E85318 /* Pods_ShoesReviewApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,11 +51,10 @@
 		43C6371EE0427D25A2C50527 /* Pods-ShoesReviewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoesReviewApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoesReviewApp/Pods-ShoesReviewApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A318C8D61CE4838200680C63 /* ShoesReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoesReviewViewController.swift; sourceTree = "<group>"; };
 		A327D22E1CDDAB650069F795 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
-		A33FE4E11CDC590400A32A2F /* ShoesReviewApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShoesReviewApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		A33FE4E21CDC590500A32A2F /* libKumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libKumulos.h; sourceTree = "<group>"; };
-		A33FE4E31CDC590500A32A2F /* Kumulos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kumulos.m; sourceTree = "<group>"; };
-		A33FE4E41CDC590500A32A2F /* Kumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kumulos.h; sourceTree = "<group>"; };
-		A33FE4E51CDC590500A32A2F /* Kumulos_ARMv7-Combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "Kumulos_ARMv7-Combined.a"; sourceTree = "<group>"; };
+		A33C93C31CE7C93100D577E6 /* Kumulos_ARMv7-Combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "Kumulos_ARMv7-Combined.a"; sourceTree = "<group>"; };
+		A33C93C41CE7C93100D577E6 /* Kumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kumulos.h; sourceTree = "<group>"; };
+		A33C93C51CE7C93100D577E6 /* Kumulos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kumulos.m; sourceTree = "<group>"; };
+		A33C93C61CE7C93100D577E6 /* libKumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libKumulos.h; sourceTree = "<group>"; };
 		A33FE4E81CDC595100A32A2F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A33FE4EA1CDC595B00A32A2F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +74,8 @@
 		A3AB56A31CE3AD570015BCCE /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		A3AB56A51CE3ADE00015BCCE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A3AB56A71CE3AE360015BCCE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A3FF1E1C1CE79A2600DAD3D2 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		A3FF1E2E1CE7C7BB00DAD3D2 /* ShoesReviewApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShoesReviewApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +84,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A33FE4EB1CDC595B00A32A2F /* MobileCoreServices.framework in Frameworks */,
+				A33C93C71CE7C93100D577E6 /* Kumulos_ARMv7-Combined.a in Frameworks */,
 				A33FE4E91CDC595100A32A2F /* SystemConfiguration.framework in Frameworks */,
 				E9DA6F03A99004290557BAA5 /* Pods_ShoesReviewApp.framework in Frameworks */,
-				A33FE4E71CDC590500A32A2F /* Kumulos_ARMv7-Combined.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				A3AB56A51CE3ADE00015BCCE /* HomeViewController.swift */,
-				A318C8D61CE4838200680C63 /* ShoesReviewViewController.swift */,
 				A3AB56A71CE3AE360015BCCE /* SearchViewController.swift */,
+				A318C8D61CE4838200680C63 /* ShoesReviewViewController.swift */,
 				A3AB56A31CE3AD570015BCCE /* LogoutViewController.swift */,
 			);
 			name = TabBarController;
@@ -148,11 +150,11 @@
 		A33FE4E01CDC58F000A32A2F /* KumulosAPI */ = {
 			isa = PBXGroup;
 			children = (
-				A33FE4E21CDC590500A32A2F /* libKumulos.h */,
-				A33FE4E31CDC590500A32A2F /* Kumulos.m */,
-				A33FE4E41CDC590500A32A2F /* Kumulos.h */,
-				A33FE4E51CDC590500A32A2F /* Kumulos_ARMv7-Combined.a */,
-				A33FE4E11CDC590400A32A2F /* ShoesReviewApp-Bridging-Header.h */,
+				A33C93C31CE7C93100D577E6 /* Kumulos_ARMv7-Combined.a */,
+				A33C93C41CE7C93100D577E6 /* Kumulos.h */,
+				A33C93C51CE7C93100D577E6 /* Kumulos.m */,
+				A33C93C61CE7C93100D577E6 /* libKumulos.h */,
+				A3FF1E2E1CE7C7BB00DAD3D2 /* ShoesReviewApp-Bridging-Header.h */,
 			);
 			path = KumulosAPI;
 			sourceTree = "<group>";
@@ -186,6 +188,7 @@
 				A3097EAE1CDFB8770038CD9E /* TabBarController */,
 				A318C8DB1CE4A6AD00680C63 /* ViewControllers */,
 				A362A3E61CDBF15700320644 /* AppDelegate.swift */,
+				A3FF1E1C1CE79A2600DAD3D2 /* BaseService.swift */,
 				A362A3EA1CDBF15700320644 /* Main.storyboard */,
 				A362A3ED1CDBF15700320644 /* Assets.xcassets */,
 				A362A3EF1CDBF15700320644 /* LaunchScreen.storyboard */,
@@ -394,14 +397,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33C93C81CE7C93100D577E6 /* Kumulos.m in Sources */,
 				A362A3E91CDBF15700320644 /* LoginViewController.swift in Sources */,
 				A327D22F1CDDAB650069F795 /* ChangePasswordViewController.swift in Sources */,
 				A3AB56A81CE3AE360015BCCE /* SearchViewController.swift in Sources */,
-				A33FE4E61CDC590500A32A2F /* Kumulos.m in Sources */,
 				A318C8D71CE4838200680C63 /* ShoesReviewViewController.swift in Sources */,
 				A362A3E71CDBF15700320644 /* AppDelegate.swift in Sources */,
 				A3AB56A41CE3AD570015BCCE /* LogoutViewController.swift in Sources */,
 				A3AB56A61CE3ADE00015BCCE /* HomeViewController.swift in Sources */,
+				A3FF1E1D1CE79A2600DAD3D2 /* BaseService.swift in Sources */,
 				A33FE4F31CDC9D5300A32A2F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

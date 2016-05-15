@@ -29,7 +29,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func buttonSignUp_OnClick() {
         
-        if(txtPassword.text==txtConfirmPassword.text){
+        if(txtPassword.text==txtConfirmPassword.text && txtUsername.text != "" && txtPassword.text != "" && txtConfirmPassword != "" && txtEmail.text != ""){
             let kumuAPI = Kumulos()
             kumuAPI.createUserWithUsername(txtUsername.text, andPassword: txtPassword.text, andEmail: txtEmail.text)
             Successfully.hidden = false
@@ -38,6 +38,7 @@ class RegisterViewController: UIViewController {
         else{
             
             NotSuccessfully.hidden = false
+            Successfully.hidden = true
         }
     
     }

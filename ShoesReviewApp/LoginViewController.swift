@@ -12,6 +12,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var textUsername: UITextField!
     @IBOutlet weak var textPassword: UITextField!
+    @IBOutlet weak var labelSuccess: UILabel!
+    @IBOutlet weak var labelFails: UILabel!
+    
     let kumuAPI = Kumulos()
     
     override func viewDidLoad() {
@@ -25,18 +28,19 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func buttonLogIn_OnClick() {
-        //let kumuAPI = Kumulos()
-    
-        //kumuAPI.selectUserWithUsername(textUsername.text)
+        let kumuAPI = Kumulos()
+    if(kumuAPI.selectUserWithUsername(textUsername.text, andPassword: textPassword.text) != nil){
         
-    self.performSegueWithIdentifier("TabBarView", sender: self)
-
-    /*if(kumuAPI.selectUserWithUsername(textUsername.text)==textUsername.text){
+        self.performSegueWithIdentifier("TabBarView", sender: self)
         
-        self.performSegueWithIdentifier("UITabBarController", sender: self)
-        self.tabBarController?.selectedViewController = self.tabBarController?.viewControllers?.first
-        //kumuAPI.selectUserWithPassword(textPassword.text)
-        }*/
+        self.labelSuccess.hidden = false
+        self.labelFails.hidden = true
+        
+    }else{
+            self.labelFails.hidden = false
+            self.labelSuccess.hidden = true
+        }
+        
     }
     
 }

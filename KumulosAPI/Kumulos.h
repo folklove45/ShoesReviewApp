@@ -2,7 +2,7 @@
 //  Kumulos.h
 //  Kumulos
 //
-//  Created by Kumulos Bindings Compiler on May  3, 2016
+//  Created by Kumulos Bindings Compiler on May 14, 2016
 //
 
 #import <Foundation/Foundation.h>
@@ -61,7 +61,7 @@
 -(KSAPIOperation*) updatePhotosWithImageData:(NSData*)imageData;
     
    
--(KSAPIOperation*) createPostsWithDescription:(NSString*)description;
+-(KSAPIOperation*) createPostsWithDescription:(NSString*)description andPostOwner:(NSUInteger)postOwner andImageData:(NSData*)imageData;
     
    
 -(KSAPIOperation*) deletePostsWithDescription:(NSString*)description;
@@ -76,13 +76,13 @@
 -(KSAPIOperation*) createUserWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email;
     
    
--(KSAPIOperation*) deleteUserWithUsername:(NSString*)username andPassword:(NSString*)password;
+-(KSAPIOperation*) deleteUserWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email;
     
    
--(KSAPIOperation*) selectUserWithUsername:(NSString*)username;
+-(KSAPIOperation*) selectUserWithUsername:(NSString*)username andPassword:(NSString*)password;
     
    
--(KSAPIOperation*) updateUserWithUsername:(NSString*)username andPassword:(NSString*)password andEmail:(NSString*)email;
+-(KSAPIOperation*) updateUserWithUsername:(NSString*)username andPassword:(NSString*)password;
     
             
 @end

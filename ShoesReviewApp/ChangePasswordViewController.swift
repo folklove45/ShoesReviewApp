@@ -14,6 +14,7 @@ class ChangePasswordViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtNewPassword: UITextField!
     @IBOutlet weak var txtSuccess: UILabel!
+    @IBOutlet weak var txtFail: UILabel!
     
     
     override func viewDidLoad() {
@@ -36,6 +37,19 @@ class ChangePasswordViewController: UIViewController {
                         txtSuccess.hidden = false
                     }
                 }*/
+        if(txtUsername.text != "" && txtPassword.text != "" && txtNewPassword.text != ""){
+            let kumuAPI = Kumulos()
+            kumuAPI.updateUserWithUsername(txtUsername.text, andPassword: txtNewPassword.text)
+            
+            txtSuccess.hidden = false
+            txtFail.hidden = true
+        }
+        else{
+            
+            txtFail.hidden = false
+            txtSuccess.hidden = true
+        }
+        
     }
 
 }
