@@ -501,10 +501,12 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-LI-6s0">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xC-nH-jdK">
-                                        <rect key="frame" x="8" y="101" width="359" height="236"/>
-                                        <color key="backgroundColor" red="0.76599485629999997" green="0.97022867199999996" blue="0.92431818860000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Describe your moment..." translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Dt-7Fr">
+                                        <rect key="frame" x="8" y="375" width="359" height="149"/>
+                                        <color key="backgroundColor" red="0.76599485626105501" green="0.97022867202758789" blue="0.92431818857534309" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Shoes Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6s-ur-j66">
                                         <rect key="frame" x="8" y="75" width="359" height="27"/>
                                         <color key="backgroundColor" red="0.0" green="0.62142646079999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -529,12 +531,10 @@
                                             <action selector="buttonPhotoLibrary_OnClick:" destination="4K2-f7-9TB" eventType="touchUpInside" id="qtk-6a-oGg"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Describe your moment..." translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Dt-7Fr">
-                                        <rect key="frame" x="8" y="375" width="359" height="149"/>
-                                        <color key="backgroundColor" red="0.76599485626105501" green="0.97022867202758789" blue="0.92431818857534309" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xC-nH-jdK">
+                                        <rect key="frame" x="8" y="101" width="359" height="236"/>
+                                        <color key="backgroundColor" red="0.76599485629999997" green="0.97022867199999996" blue="0.92431818860000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99537645190000001" green="1" blue="0.9653457204" alpha="1" colorSpace="calibratedRGB"/>
                             </view>

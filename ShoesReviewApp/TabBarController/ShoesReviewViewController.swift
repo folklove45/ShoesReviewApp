@@ -36,15 +36,8 @@ class ShoesReviewViewController: UIViewController,UIImagePickerControllerDelegat
         
         picker.delegate = self
         picker.sourceType = .PhotoLibrary
-        
         presentViewController(picker, animated: true ,completion:  nil)
         
-        
-        /*if let image = image {
-            let kumuAPI = Kumulos()
-            let imageNSData = UIImageJPEGRepresentation(image, 1)
-            kumuAPI.updatePhotosWithImageData(imageNSData, andPostData: 1)
-        }*/
     }
 
     //โชว์รูปภาพที่เลือกมาใส่ไว้ใน txtPhoto
@@ -65,5 +58,9 @@ class ShoesReviewViewController: UIViewController,UIImagePickerControllerDelegat
         
         self.performSegueWithIdentifier("ShoesReviewToTabBar", sender: self)
         
+            let kumuAPI = Kumulos()
+            let imageNSData = UIImageJPEGRepresentation(txtPhoto.image! , 1)
+            kumuAPI.createPostsWithDescription(txtDescribe.text, andPostOwner: 1, andImageData: imageNSData)
     }
+    
 }
