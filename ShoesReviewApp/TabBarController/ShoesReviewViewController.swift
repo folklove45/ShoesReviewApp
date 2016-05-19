@@ -56,11 +56,45 @@ class ShoesReviewViewController: UIViewController,UIImagePickerControllerDelegat
     
     @IBAction func txtDone_OnClick(sender: AnyObject) {
         
-        self.performSegueWithIdentifier("ShoesReviewToTabBar", sender: self)
+        //self.performSegueWithIdentifier("ShoesReviewToTabBar", sender: self)
         
+        if(txtPhoto.image != nil && txtDescribe.text != ""){
             let kumuAPI = Kumulos()
             let imageNSData = UIImageJPEGRepresentation(txtPhoto.image! , 1)
-            kumuAPI.createPostsWithDescription(txtDescribe.text, andPostOwner: 1, andImageData: imageNSData)
+            kumuAPI.createPostsWithDescription(txtDescribe.text, andPostOwner: 2, andImageData: imageNSData)
+            self.performSegueWithIdentifier("ShoesReviewToTabBar", sender: self)
+        }
+        
+        else if(txtPhoto.image == nil && txtDescribe.text != ""){
+            let kumuAPI = Kumulos()
+            kumuAPI.createPostsWithDescription(txtDescribe.text, andPostOwner: 2, andImageData: nil)
+            self.performSegueWithIdentifier("ShoesReviewToTabBar", sender: self)
+        }
+        
+        else if(txtPhoto.image != nil && txtDescribe.text == ""){
+
+            let myAlert = UIAlertController(title: "Alert", message: "Please enter describtion", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+            
+        }
+        
+        else if(txtPhoto.image == nil && txtDescribe.text == ""){
+            
+            let myAlert = UIAlertController(title: "Alert", message: "Please enter describtion", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+            
+        }
+
     }
     
 }
