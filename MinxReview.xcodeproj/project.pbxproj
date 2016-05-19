@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A318C8D51CE46FA700680C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A362A3ED1CDBF15700320644 /* Assets.xcassets */; };
-		A318C8D71CE4838200680C63 /* ShoesReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318C8D61CE4838200680C63 /* ShoesReviewViewController.swift */; };
-		A327D22F1CDDAB650069F795 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A327D22E1CDDAB650069F795 /* ChangePasswordViewController.swift */; };
 		A33C93C71CE7C93100D577E6 /* Kumulos_ARMv7-Combined.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33C93C31CE7C93100D577E6 /* Kumulos_ARMv7-Combined.a */; };
 		A33C93C81CE7C93100D577E6 /* Kumulos.m in Sources */ = {isa = PBXBuildFile; fileRef = A33C93C51CE7C93100D577E6 /* Kumulos.m */; };
 		A33FE4E91CDC595100A32A2F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4E81CDC595100A32A2F /* SystemConfiguration.framework */; };
 		A33FE4EB1CDC595B00A32A2F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33FE4EA1CDC595B00A32A2F /* MobileCoreServices.framework */; };
-		A33FE4F31CDC9D5300A32A2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */; };
 		A362A3E71CDBF15700320644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E61CDBF15700320644 /* AppDelegate.swift */; };
-		A362A3E91CDBF15700320644 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3E81CDBF15700320644 /* LoginViewController.swift */; };
 		A362A3EC1CDBF15700320644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A362A3EA1CDBF15700320644 /* Main.storyboard */; };
 		A362A3F11CDBF15700320644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A362A3EF1CDBF15700320644 /* LaunchScreen.storyboard */; };
 		A362A3FC1CDBF15700320644 /* ShoesReviewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A3FB1CDBF15700320644 /* ShoesReviewAppTests.swift */; };
 		A362A4071CDBF15700320644 /* ShoesReviewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362A4061CDBF15700320644 /* ShoesReviewAppUITests.swift */; };
-		A3AB56A41CE3AD570015BCCE /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB56A31CE3AD570015BCCE /* LogoutViewController.swift */; };
-		A3AB56A61CE3ADE00015BCCE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB56A51CE3ADE00015BCCE /* HomeViewController.swift */; };
-		A3AB56A81CE3AE360015BCCE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB56A71CE3AE360015BCCE /* SearchViewController.swift */; };
+		A3E458701CEDA7CF006F0FAA /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4586D1CEDA7CF006F0FAA /* ChangePasswordViewController.swift */; };
+		A3E458711CEDA7CF006F0FAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4586E1CEDA7CF006F0FAA /* LoginViewController.swift */; };
+		A3E458721CEDA7CF006F0FAA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4586F1CEDA7CF006F0FAA /* RegisterViewController.swift */; };
+		A3E458781CEDA7DD006F0FAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E458741CEDA7DD006F0FAA /* HomeViewController.swift */; };
+		A3E458791CEDA7DD006F0FAA /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E458751CEDA7DD006F0FAA /* LogoutViewController.swift */; };
+		A3E4587A1CEDA7DD006F0FAA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E458761CEDA7DD006F0FAA /* SearchViewController.swift */; };
+		A3E4587B1CEDA7DD006F0FAA /* ShoesReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E458771CEDA7DD006F0FAA /* ShoesReviewViewController.swift */; };
+		A3E4587F1CEDA98F006F0FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4587E1CEDA98F006F0FAA /* ViewController.swift */; };
+		A3E458831CEDAC43006F0FAA /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E458821CEDAC43006F0FAA /* PhotoTakingHelper.swift */; };
 		A3FF1E1D1CE79A2600DAD3D2 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FF1E1C1CE79A2600DAD3D2 /* BaseService.swift */; };
 		E9DA6F03A99004290557BAA5 /* Pods_ShoesReviewApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D2A5D653D1E7E27E85318 /* Pods_ShoesReviewApp.framework */; };
 /* End PBXBuildFile section */
@@ -49,18 +51,14 @@
 		290D2A5D653D1E7E27E85318 /* Pods_ShoesReviewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoesReviewApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E68ED1F44E08FB98E4699C8 /* Pods-ShoesReviewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoesReviewApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShoesReviewApp/Pods-ShoesReviewApp.release.xcconfig"; sourceTree = "<group>"; };
 		43C6371EE0427D25A2C50527 /* Pods-ShoesReviewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoesReviewApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShoesReviewApp/Pods-ShoesReviewApp.debug.xcconfig"; sourceTree = "<group>"; };
-		A318C8D61CE4838200680C63 /* ShoesReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoesReviewViewController.swift; sourceTree = "<group>"; };
-		A327D22E1CDDAB650069F795 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		A33C93C31CE7C93100D577E6 /* Kumulos_ARMv7-Combined.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "Kumulos_ARMv7-Combined.a"; sourceTree = "<group>"; };
 		A33C93C41CE7C93100D577E6 /* Kumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kumulos.h; sourceTree = "<group>"; };
 		A33C93C51CE7C93100D577E6 /* Kumulos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kumulos.m; sourceTree = "<group>"; };
 		A33C93C61CE7C93100D577E6 /* libKumulos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libKumulos.h; sourceTree = "<group>"; };
 		A33FE4E81CDC595100A32A2F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A33FE4EA1CDC595B00A32A2F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A362A3E31CDBF15700320644 /* MinxReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinxReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A362A3E61CDBF15700320644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A362A3E81CDBF15700320644 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A362A3EB1CDBF15700320644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A362A3ED1CDBF15700320644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A362A3F01CDBF15700320644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,9 +69,15 @@
 		A362A4021CDBF15700320644 /* MinxReview.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinxReview.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A362A4061CDBF15700320644 /* ShoesReviewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesReviewAppUITests.swift; sourceTree = "<group>"; };
 		A362A4081CDBF15700320644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3AB56A31CE3AD570015BCCE /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
-		A3AB56A51CE3ADE00015BCCE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A3AB56A71CE3AE360015BCCE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A3E4586D1CEDA7CF006F0FAA /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		A3E4586E1CEDA7CF006F0FAA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A3E4586F1CEDA7CF006F0FAA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A3E458741CEDA7DD006F0FAA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A3E458751CEDA7DD006F0FAA /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		A3E458761CEDA7DD006F0FAA /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A3E458771CEDA7DD006F0FAA /* ShoesReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoesReviewViewController.swift; sourceTree = "<group>"; };
+		A3E4587E1CEDA98F006F0FAA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3E458821CEDAC43006F0FAA /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		A3FF1E1C1CE79A2600DAD3D2 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		A3FF1E2E1CE7C7BB00DAD3D2 /* ShoesReviewApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShoesReviewApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,27 +130,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A3097EAE1CDFB8770038CD9E /* TabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				A3AB56A51CE3ADE00015BCCE /* HomeViewController.swift */,
-				A3AB56A71CE3AE360015BCCE /* SearchViewController.swift */,
-				A318C8D61CE4838200680C63 /* ShoesReviewViewController.swift */,
-				A3AB56A31CE3AD570015BCCE /* LogoutViewController.swift */,
-			);
-			name = TabBarController;
-			sourceTree = "<group>";
-		};
-		A318C8DB1CE4A6AD00680C63 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				A362A3E81CDBF15700320644 /* LoginViewController.swift */,
-				A33FE4F21CDC9D5300A32A2F /* RegisterViewController.swift */,
-				A327D22E1CDDAB650069F795 /* ChangePasswordViewController.swift */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
 		A33FE4E01CDC58F000A32A2F /* KumulosAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,9 +168,10 @@
 		A362A3E51CDBF15700320644 /* ShoesReviewApp */ = {
 			isa = PBXGroup;
 			children = (
-				A3097EAE1CDFB8770038CD9E /* TabBarController */,
-				A318C8DB1CE4A6AD00680C63 /* ViewControllers */,
+				A3E458731CEDA7DD006F0FAA /* TabBarController */,
+				A3E4586C1CEDA7CF006F0FAA /* ViewControllers */,
 				A362A3E61CDBF15700320644 /* AppDelegate.swift */,
+				A3E4587E1CEDA98F006F0FAA /* ViewController.swift */,
 				A3FF1E1C1CE79A2600DAD3D2 /* BaseService.swift */,
 				A362A3EA1CDBF15700320644 /* Main.storyboard */,
 				A362A3ED1CDBF15700320644 /* Assets.xcassets */,
@@ -213,6 +197,28 @@
 				A362A4081CDBF15700320644 /* Info.plist */,
 			);
 			path = ShoesReviewAppUITests;
+			sourceTree = "<group>";
+		};
+		A3E4586C1CEDA7CF006F0FAA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3E4586E1CEDA7CF006F0FAA /* LoginViewController.swift */,
+				A3E4586F1CEDA7CF006F0FAA /* RegisterViewController.swift */,
+				A3E4586D1CEDA7CF006F0FAA /* ChangePasswordViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A3E458731CEDA7DD006F0FAA /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				A3E458741CEDA7DD006F0FAA /* HomeViewController.swift */,
+				A3E458761CEDA7DD006F0FAA /* SearchViewController.swift */,
+				A3E458751CEDA7DD006F0FAA /* LogoutViewController.swift */,
+				A3E458771CEDA7DD006F0FAA /* ShoesReviewViewController.swift */,
+				A3E458821CEDAC43006F0FAA /* PhotoTakingHelper.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,16 +403,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E458711CEDA7CF006F0FAA /* LoginViewController.swift in Sources */,
+				A3E458701CEDA7CF006F0FAA /* ChangePasswordViewController.swift in Sources */,
 				A33C93C81CE7C93100D577E6 /* Kumulos.m in Sources */,
-				A362A3E91CDBF15700320644 /* LoginViewController.swift in Sources */,
-				A327D22F1CDDAB650069F795 /* ChangePasswordViewController.swift in Sources */,
-				A3AB56A81CE3AE360015BCCE /* SearchViewController.swift in Sources */,
-				A318C8D71CE4838200680C63 /* ShoesReviewViewController.swift in Sources */,
+				A3E458781CEDA7DD006F0FAA /* HomeViewController.swift in Sources */,
+				A3E4587F1CEDA98F006F0FAA /* ViewController.swift in Sources */,
 				A362A3E71CDBF15700320644 /* AppDelegate.swift in Sources */,
-				A3AB56A41CE3AD570015BCCE /* LogoutViewController.swift in Sources */,
-				A3AB56A61CE3ADE00015BCCE /* HomeViewController.swift in Sources */,
+				A3E458831CEDAC43006F0FAA /* PhotoTakingHelper.swift in Sources */,
+				A3E4587A1CEDA7DD006F0FAA /* SearchViewController.swift in Sources */,
+				A3E458721CEDA7CF006F0FAA /* RegisterViewController.swift in Sources */,
+				A3E4587B1CEDA7DD006F0FAA /* ShoesReviewViewController.swift in Sources */,
 				A3FF1E1D1CE79A2600DAD3D2 /* BaseService.swift in Sources */,
-				A33FE4F31CDC9D5300A32A2F /* RegisterViewController.swift in Sources */,
+				A3E458791CEDA7DD006F0FAA /* LogoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

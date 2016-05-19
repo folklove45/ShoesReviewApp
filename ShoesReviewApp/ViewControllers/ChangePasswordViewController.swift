@@ -48,6 +48,14 @@ class ChangePasswordViewController: UIViewController {
             
             txtFail.hidden = false
             txtSuccess.hidden = true
+            
+            let myAlert = UIAlertController(title: "Alert", message: "Please check your Username and your Password again", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
         }
         
     }

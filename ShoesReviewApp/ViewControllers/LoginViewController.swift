@@ -29,16 +29,25 @@ class LoginViewController: UIViewController {
     
     @IBAction func buttonLogIn_OnClick() {
         let kumuAPI = Kumulos()
-    if(kumuAPI.selectUserWithUsername(textUsername.text, andPassword: textPassword.text) != nil){
+    if(kumuAPI.selectUserWithUsername(textUsername.text, andPassword: textPassword.text) != ""){
         
         self.performSegueWithIdentifier("TabBarView", sender: self)
         
         self.labelSuccess.hidden = false
         self.labelFails.hidden = true
         
+        
     }else{
             self.labelFails.hidden = false
             self.labelSuccess.hidden = true
+        let myAlert = UIAlertController(title: "Alert", message: "Please login again", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        
+        myAlert.addAction(okAction)
+        
+        self.presentViewController(myAlert, animated: true, completion: nil)
+        
         }
         
     }

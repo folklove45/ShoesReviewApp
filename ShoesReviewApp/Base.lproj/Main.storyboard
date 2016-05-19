@@ -360,7 +360,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.44733084220000002" blue="0.71229967949999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="Search" id="NlM-xz-Ajc"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search" id="NlM-xz-Ajc">
+                        <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E91-Sg-NTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -424,7 +426,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.44733084220000002" blue="0.71229967949999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="uR6-Zb-4rc"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="uR6-Zb-4rc">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="1"/>
+                    </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="uv0-Zn-UVz" id="a6N-Yw-6M7"/>
@@ -497,12 +501,6 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HoI-LI-6s0">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Describe your moment..." translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Dt-7Fr">
-                                        <rect key="frame" x="8" y="375" width="359" height="149"/>
-                                        <color key="backgroundColor" red="0.76599485626105501" green="0.97022867202758789" blue="0.92431818857534309" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xC-nH-jdK">
                                         <rect key="frame" x="8" y="101" width="359" height="236"/>
                                         <color key="backgroundColor" red="0.76599485629999997" green="0.97022867199999996" blue="0.92431818860000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -528,9 +526,15 @@
                                         <rect key="frame" x="162" y="532" width="51" height="45"/>
                                         <state key="normal" image="Camera logo"/>
                                         <connections>
-                                            <action selector="txtCamera_OnClick" destination="4K2-f7-9TB" eventType="touchUpInside" id="Ib0-QT-ftD"/>
+                                            <action selector="buttonPhotoLibrary_OnClick:" destination="4K2-f7-9TB" eventType="touchUpInside" id="qtk-6a-oGg"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Describe your moment..." translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Dt-7Fr">
+                                        <rect key="frame" x="8" y="375" width="359" height="149"/>
+                                        <color key="backgroundColor" red="0.76599485626105501" green="0.97022867202758789" blue="0.92431818857534309" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99537645190000001" green="1" blue="0.9653457204" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -545,6 +549,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="PhotoLibrary" destination="1xT-lq-xA3" id="1Kr-8q-ZLd"/>
+                        <outlet property="tabSelect" destination="F9L-Xg-Xm6" id="9F8-c0-c5n"/>
                         <outlet property="txtDescribe" destination="ywH-Dt-7Fr" id="zss-wM-Mc0"/>
                         <outlet property="txtPhoto" destination="9xC-nH-jdK" id="Uud-gS-S6Q"/>
                         <segue destination="NHu-Oc-c7j" kind="presentation" identifier="ShoesReviewToTabBar" id="Q2r-0f-WFE"/>
@@ -601,7 +607,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.44733084220000002" blue="0.71229967949999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="Log Out" id="T2G-wE-r72"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Log Out" id="T2G-wE-r72">
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="2"/>
+                    </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="wls-DS-rDu" kind="presentation" identifier="LogOutToLogInView" id="0hL-kD-8Qj"/>

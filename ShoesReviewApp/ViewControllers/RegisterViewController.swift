@@ -26,21 +26,31 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //var arrayOfString: [String] = [""]
     
     @IBAction func buttonSignUp_OnClick() {
-        
+        //เช็คไม่ให้ช่องแต่ละช่องเป็นค่าว่าง
         if(txtPassword.text==txtConfirmPassword.text && txtUsername.text != "" && txtPassword.text != "" && txtConfirmPassword != "" && txtEmail.text != ""){
             let kumuAPI = Kumulos()
             kumuAPI.createUserWithUsername(txtUsername.text, andPassword: txtPassword.text, andEmail: txtEmail.text)
             Successfully.hidden = false
             NotSuccessfully.hidden = true
+            
         }
         else{
             
             NotSuccessfully.hidden = false
             Successfully.hidden = true
+            
+            let myAlert = UIAlertController(title: "Alert", message: "Please enter a valid", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+
         }
-    
     }
     
 }
